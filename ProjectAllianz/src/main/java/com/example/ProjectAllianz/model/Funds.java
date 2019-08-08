@@ -20,6 +20,28 @@ public class Funds {
     @Column(name = "informationQuoteId")
     private int id;
 
+    @Column(name = "riskIndicator")
+    private int risk;
+
+    @Column(name = "morningStarRating")
+    private int rate;
+
+    public void setRisk(int risk) {
+        this.risk = risk;
+    }
+
+    public void setRate(int rate) {
+        this.rate = rate;
+    }
+
+    public int getRisk() {
+        return risk;
+    }
+
+    public int getRate() {
+        return rate;
+    }
+
     public int getPercent() {
         return percent;
     }

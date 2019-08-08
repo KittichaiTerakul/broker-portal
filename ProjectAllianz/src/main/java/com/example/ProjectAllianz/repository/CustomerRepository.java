@@ -8,4 +8,5 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface CustomerRepository extends JpaRepository<Customer,Integer> {
 
+
 }
