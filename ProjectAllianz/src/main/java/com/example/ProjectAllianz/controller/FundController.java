@@ -31,5 +31,4 @@ public class FundController  {
         } return fundService.getFundByCustomerId(bookId);    }
 
 
-
 }
