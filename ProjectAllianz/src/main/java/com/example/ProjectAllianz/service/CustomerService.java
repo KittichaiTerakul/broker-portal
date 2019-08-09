@@ -30,10 +30,10 @@ public class CustomerService {
         customerRepository.deleteById(id);
     }
 
-    public Customer updateCustomerById(int id , Customer customer){
-        customerRepository.findById(id).ifPresent(e -> customer.setId(e.getId()));
-        return  customerRepository.save(customer);
-    }
+//    public Customer updateCustomerById(int id , Customer customer){
+//        customerRepository.findById(id).ifPresent(e -> customer.setId(e.getId()));
+//        return  customerRepository.save(customer);
+//    }
 
 
 }
