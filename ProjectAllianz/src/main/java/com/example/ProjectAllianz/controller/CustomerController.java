@@ -1,6 +1,8 @@
 package com.example.ProjectAllianz.controller;
 
 
+import com.example.ProjectAllianz.dto.CustomerDTO;
+import com.example.ProjectAllianz.mapper.CustomerMapper;
 import com.example.ProjectAllianz.model.Customer;
 import com.example.ProjectAllianz.model.Funds;
 import com.example.ProjectAllianz.service.CustomerService;
@@ -24,21 +26,16 @@ public class CustomerController {
 
     @Autowired
     private CustomerService customerService;
-//    private final CustomerMapper customerMapper;
+    private CustomerMapper customerMapper;
 
 
 
     @ApiOperation(value = "Information Customer", notes = "Information Customer test")
     @GetMapping(value = "/all")
     @ResponseBody
-    public List<Customer> getAllCustomer(){
-//        List<Customer> customers = customerService.getAllCustomer();
-//        return customers.stream()
-//                .map(customer -> convertToDto(customer))
-//                .collect(Collectors.toList());
-        return customerService.getAllCustomer();
+    public ResponseEntity<List<CustomerDTO>> getAllCustomer(){
+        return ResponseEntity.ok(customerMapper.toCustomerDTOs(customerService.getAllCustomer()));
     }
-//    public ResponseEntity<List<>>
 
     @PostMapping(value = "/create" )
     public List<Customer> createCustomer (@RequestBody Customer customer){
