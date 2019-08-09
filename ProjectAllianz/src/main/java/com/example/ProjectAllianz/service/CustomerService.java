@@ -4,14 +4,14 @@ import com.example.ProjectAllianz.model.Customer;
 import com.example.ProjectAllianz.repository.CustomerRepository;
 import com.example.ProjectAllianz.repository.FundRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class CustomerService {
 
     @Autowired
     private CustomerRepository customerRepository;
-
 
 
     public List<Customer> getAllCustomer(){
@@ -30,7 +30,7 @@ public class CustomerService {
         customerRepository.deleteById(id);
     }
 
-    public Customer updateEmployeeById(int id , Customer customer){
+    public Customer updateCustomerById(int id , Customer customer){
         customerRepository.findById(id).ifPresent(e -> customer.setId(e.getId()));
         return  customerRepository.save(customer);
     }

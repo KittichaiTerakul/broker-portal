@@ -14,6 +14,7 @@ public class FundController  {
 
     @Autowired
     private FundService fundService;
+
     @GetMapping(value="/fund/all")
     public List<Funds> getAll(){
         return fundService.getAllFunds();
@@ -25,10 +26,10 @@ public class FundController  {
         return fundService.getAllFunds();
     }
 
-    @GetMapping public List<Funds> findFundsByBookId(@RequestParam(required = false, defaultValue = "0") int bookId) {
-        if (bookId == 0 ) {
-            return fundService.getAllFunds();
-        } return fundService.getFundByCustomerId(bookId);    }
+//    @GetMapping public List<Funds> findFundsByBookId(@RequestParam(required = false, defaultValue = "0") int bookId) {
+//        if (bookId == 0 ) {
+//            return fundService.getAllFunds();
+//        } return fundService.getFundByCustomerId(bookId);    }
 
 
 }

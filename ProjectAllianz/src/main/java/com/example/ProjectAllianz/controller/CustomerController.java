@@ -1,9 +1,11 @@
 package com.example.ProjectAllianz.controller;
 
 import com.example.ProjectAllianz.dto.CustomerDto;
+import com.example.ProjectAllianz.maper.CustomerMapper;
 import com.example.ProjectAllianz.model.Customer;
 import com.example.ProjectAllianz.service.CustomerService;
 import org.modelmapper.ModelMapper;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,11 +15,15 @@ import java.util.stream.Collectors;
 @RestController
 public class CustomerController {
 
-    @Autowired
-    private CustomerService customerService;
+//    @Autowired
+//    private CustomerService customerService;
+
 
     @Autowired
-    private ModelMapper modelMapper;
+    private CustomerService customerService;
+//    private final CustomerMapper customerMapper;
+
+
 
     @GetMapping(value = "/all")
     @ResponseBody
@@ -35,12 +41,12 @@ public class CustomerController {
         return customerService.getAllCustomer();
     }
 
-    private CustomerDto convertToDto(Customer customer) {
-        CustomerDto customerDto = modelMapper.map(customer, CustomerDto.class);
+//    private CustomerDto convertToDto(Customer customer) {
+//        CustomerDto customerDto = customerMapper.map(customer, CustomerDto.class);
 //        customerDto.setSubmissionDate(post.getSubmissionDate(),
 //                userService.getCurrentUser().getPreference().getTimezone());
-        return customerDto;
-    }
+//        return customerDto;
+//    }
 
 
 }

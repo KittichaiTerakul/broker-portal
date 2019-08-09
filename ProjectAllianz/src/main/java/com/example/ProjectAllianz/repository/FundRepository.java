@@ -8,5 +8,5 @@ import java.util.List;
 public interface FundRepository extends JpaRepository<Funds,Integer> {
 
 
-    List<Funds> findFundsByCustomerId(int CustomerId);
+//    List<Funds> findFundsByCustomerId(int CustomerId);
 }
