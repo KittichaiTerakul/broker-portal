@@ -25,6 +25,7 @@
       </formatting-settings>
     </DBN-SQL>
     <DBN-PSQL>
+      <case-options enabled="false">
         <option name="KEYWORD_CASE" value="lower" />
         <option name="FUNCTION_CASE" value="lower" />
         <option name="PARAMETER_CASE" value="lower" />
