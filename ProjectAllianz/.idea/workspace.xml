@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42c51ed5-1244-439d-b620-690156ca3661" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_3_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ProjectAllianz/maper/CustomerMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectAllianz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectAllianz.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ProjectAllianz/config/AplicationConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ProjectAllianz/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ProjectAllianz/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ProjectAllianz/controller/FundController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ProjectAllianz/controller/FundController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ProjectAllianz/dto/CustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ProjectAllianz/dto/CustomerDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ProjectAllianz/repository/FundRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ProjectAllianz/repository/FundRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ProjectAllianz/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ProjectAllianz/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ProjectAllianz/service/FundService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ProjectAllianz/service/FundService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ProjectAllianz/config/AplicationConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ProjectAllianz/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/ProjectAllianz/controller/CustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ProjectAllianz/controller/FundController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/ProjectAllianz/controller/FundController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ProjectAllianz/dto/CustomerDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/ProjectAllianz/dto/CustomerDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ProjectAllianz/repository/FundRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/ProjectAllianz/repository/FundRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ProjectAllianz/service/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/ProjectAllianz/service/CustomerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ProjectAllianz/service/FundService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/ProjectAllianz/service/FundService.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

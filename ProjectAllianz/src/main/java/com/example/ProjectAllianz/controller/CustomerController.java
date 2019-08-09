@@ -21,7 +21,8 @@ public class CustomerController {
 
     @Autowired
     private CustomerService customerService;
-//    private final CustomerMapper customerMapper;
+
+    private CustomerMapper customerMapper;
 
 
 
