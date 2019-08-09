@@ -2,9 +2,11 @@ package com.example.ProjectAllianz.controller;
 
 
 import com.example.ProjectAllianz.model.Customer;
+import com.example.ProjectAllianz.model.Funds;
 import com.example.ProjectAllianz.service.CustomerService;
 
 
+import com.example.ProjectAllianz.service.FundService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -29,7 +31,7 @@ public class CustomerController {
     @ApiOperation(value = "Information Customer", notes = "Information Customer test")
     @GetMapping(value = "/all")
     @ResponseBody
-    public List<Customer> getAll(){
+    public List<Customer> getAllCustomer(){
 //        List<Customer> customers = customerService.getAllCustomer();
 //        return customers.stream()
 //                .map(customer -> convertToDto(customer))
@@ -50,6 +52,22 @@ public class CustomerController {
 //                userService.getCurrentUser().getPreference().getTimezone());
 //        return customerDto;
 //    }
+
+
+
+    @Autowired
+    private FundService fundService;
+
+    @GetMapping(value="/fund/all")
+    public List<Funds> getAllFunds(){
+        return fundService.getAllFunds();
+    }
+
+    @PostMapping(value = "/funds/create")
+    public List<Funds> createFund (@RequestBody Funds funds){
+        fundService.addFunds(funds);
+        return fundService.getAllFunds();
+    }
 
 
 }
