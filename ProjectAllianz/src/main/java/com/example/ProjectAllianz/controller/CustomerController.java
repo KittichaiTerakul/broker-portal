@@ -1,7 +1,12 @@
 package com.example.ProjectAllianz.controller;
 
 
+<<<<<<< HEAD
 import com.example.ProjectAllianz.dto.CustomerDto;
+=======
+import com.example.ProjectAllianz.dto.CustomerDTO;
+import com.example.ProjectAllianz.mapper.CustomerMapper;
+>>>>>>> bcef70298a8b604535ca29480a67d0ada01fcbbd
 import com.example.ProjectAllianz.model.Customer;
 import com.example.ProjectAllianz.model.Funds;
 import com.example.ProjectAllianz.service.CustomerService;
@@ -11,7 +16,11 @@ import com.example.ProjectAllianz.service.FundService;
 import io.swagger.annotations.ApiOperation;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+<<<<<<< HEAD
 import org.springframework.http.HttpStatus;
+=======
+import org.springframework.http.ResponseEntity;
+>>>>>>> bcef70298a8b604535ca29480a67d0ada01fcbbd
 import org.springframework.web.bind.annotation.*;
 
 import java.text.ParseException;
@@ -24,6 +33,10 @@ public class CustomerController {
 
     @Autowired
     private CustomerService customerService;
+<<<<<<< HEAD
+=======
+    private CustomerMapper customerMapper;
+>>>>>>> bcef70298a8b604535ca29480a67d0ada01fcbbd
 
 
     private ModelMapper modelMapper = new ModelMapper();
@@ -32,6 +45,7 @@ public class CustomerController {
     @ApiOperation(value = "Information Customer", notes = "Information Customer test")
     @GetMapping(value = "/all")
     @ResponseBody
+<<<<<<< HEAD
     public List<CustomerDto> getAllCustomer(){
         List<Customer> customers = customerService.getAllCustomer();
         return customers.stream().map(customer -> convertToDto(customer)).collect(Collectors.toList());
@@ -52,6 +66,10 @@ public class CustomerController {
     @ResponseBody
     public CustomerDto getCustomer(@PathVariable("id") int id){
         return convertToDto(customerService.getCustomerById(id));
+=======
+    public ResponseEntity<List<CustomerDTO>> getAllCustomer(){
+        return ResponseEntity.ok(customerMapper.toCustomerDTOs(customerService.getAllCustomer()));
+>>>>>>> bcef70298a8b604535ca29480a67d0ada01fcbbd
     }
 
     @PutMapping(value = "/{id}" )
