@@ -1,11 +1,11 @@
 package com.example.ProjectAllianz.controller;
 
-import com.example.ProjectAllianz.dto.CustomerDto;
-import com.example.ProjectAllianz.maper.CustomerMapper;
+
 import com.example.ProjectAllianz.model.Customer;
 import com.example.ProjectAllianz.service.CustomerService;
-import org.modelmapper.ModelMapper;
 
+
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -26,6 +26,7 @@ public class CustomerController {
 
 
 
+    @ApiOperation(value = "Information Customer", notes = "Information Customer test")
     @GetMapping(value = "/all")
     @ResponseBody
     public List<Customer> getAll(){
